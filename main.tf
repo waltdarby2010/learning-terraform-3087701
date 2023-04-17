@@ -30,6 +30,7 @@ resource "aws_instance" "blog" {
 
 resource "aws_security_group" "blog" {
   name = "blog"
+  description = "Allow HTTP and HTTPS in. Allow everything out."
   tags = {
     Terraform = "true"
   }
